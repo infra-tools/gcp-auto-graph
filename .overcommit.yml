@@ -1,0 +1,7 @@
+PreCommit:
+  GoFmt:
+    enabled: true
+
+  GoLint:
+    enabled: true
+    on_warn: fail
