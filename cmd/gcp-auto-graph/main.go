@@ -1,23 +1,23 @@
 package main
 
 import (
-  "os"
-  "text/template"
 	"fmt"
+	"os"
+	"text/template"
 
 	"github.com/infra-tools/gcp-auto-graph/pkg/google/compute"
 )
 
 func main() {
 
-  // TODO(mccallry,juliosueiras) Use Viper for config
-  templateVMs, err := compute.GetVMs("random-project", "northamerica-northeast1-a")
+	// TODO(mccallry,juliosueiras) Use Viper for config
+	templateVMs, err := compute.GetVMs("random-project", "northamerica-northeast1-a")
 
 	if err != nil {
 		fmt.Println(err)
 	}
 
-  tmpl, err := template.New("result").Parse(`
+	tmpl, err := template.New("result").Parse(`
 @startuml
 top to bottom direction
 skinparam linetype ortho
@@ -32,7 +32,7 @@ node "{{.Name}}" [[https://console.cloud.google.com/compute/instancesDetail/zone
 		fmt.Println(err)
 	}
 
-  err = tmpl.Execute(os.Stdout, templateVMs)
+	err = tmpl.Execute(os.Stdout, templateVMs)
 
 	if err != nil {
 		fmt.Println(err)

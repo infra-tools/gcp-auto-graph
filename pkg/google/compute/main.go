@@ -7,7 +7,7 @@ import (
 )
 
 type ComputeVMs struct {
-  VMs *googleCompute.InstanceList
+	VMs *googleCompute.InstanceList
 }
 
 // GetVMs: Simplified Function to Get VMs
@@ -19,8 +19,8 @@ func GetVMs(project string, zone string) (ComputeVMs, error) {
 	listClient := computeService.Instances.List(project, zone)
 	vms, err := listClient.Do()
 
-  result := ComputeVMs{
-    VMs: vms,
-  }
-  return result, err
+	result := ComputeVMs{
+		VMs: vms,
+	}
+	return result, err
 }
