@@ -12,7 +12,7 @@ func main() {
 
 	// TODO(mccallry,juliosueiras) Use Viper for config
 	templateVMs, err := compute.GetVMs("random-project", "northamerica-northeast1-a")
-
+	// TODO(juliosueiras) Testing TodoBot
 	if err != nil {
 		fmt.Println(err)
 	}
