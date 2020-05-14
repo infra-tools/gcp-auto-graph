@@ -22,7 +22,7 @@ func main() {
 top to bottom direction
 skinparam linetype ortho
 {{range .VMs.Items}}
-node "{{.Name}}" [[https://console.cloud.google.com/compute/instancesDetail/zones/northamerica-northeast1-a/instances/{{.Name}}?project=radix-shared-inf]]
+node "{{.Name}}" [[https://console.cloud.google.com/compute/instancesDetail/zones/northamerica-northeast1-a/instances/{{.Name}}?project=random-project]]
 {{end}}
 
 @enduml
