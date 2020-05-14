@@ -17,7 +17,7 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+#vendor/
 
 ### Go Patch ###
 /vendor/
@@ -128,3 +128,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/go,vim,linux,macos,windows,visualstudiocode
+go/
+result
