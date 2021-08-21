@@ -8,8 +8,8 @@ The tool focus on getting resources from a GCP account, be firewall, vm, etc and
 
 ## Roadmap
 
-- Basic implementation with a simple clickable vm list []
-- Configuration to exclude/include project, etc for GCP []
-- Firewall line to indicate port status of the vms in the SVG []
+- [ ] Basic implementation with a simple clickable vm list
+- [ ] Configuration to exclude/include project, etc for GCP
+- [ ] Firewall line to indicate port status of the vms in the SVG
 - Potential other feature that could be useful to the SVG...
 
